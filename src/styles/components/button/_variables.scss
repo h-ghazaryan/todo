@@ -1,0 +1,8 @@
+$button-sizes: (
+  button-width: 200px,
+  button-height: 30px,
+);
+
+@function getButtonSizes($property) {
+  @return map-get($button-sizes, $property);
+}

@@ -1,0 +1,4 @@
+@function calculate-rem($size) {
+    $remSize: $size / $rem-size;
+    @return $remSize * 1rem;
+}

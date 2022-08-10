@@ -1,0 +1,89 @@
+@use "sass:map";
+@use "sass:string";
+@use "sass:meta";
+@use "sass:list";
+@use "sass:math";
+@use "sass:selector";
+@use "sass:color";
+
+// ---
+@use "styles/abstracts";
+@use "../node_modules/reset-css/sass/reset";
+// @use "styles/components";
+
+body {
+	font-family: 'Mulish', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.article {
+	display: flex;
+	width: 100%;
+
+
+	&-left {
+		font-size: 0;
+		line-height: 0;
+	}
+
+	&-right {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	&-right-cell {
+		padding-top: 10px;
+		padding-bottom: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+.toast {
+	display: block;
+	margin-bottom: 20px;
+	border: 0;
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+	box-shadow: 0 1px 41px -15px rgba(34, 60, 80, 0.2);
+}
+
+// .btn-close
+.btn-close {
+
+	// .btn-close--position
+	&--position {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+}
+
+.main-title {
+	font-size: 21px;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 600;
+	padding-top: 15px;
+	padding-left: 20px;
+}
+
+
+.users-list-cell {
+	padding-top: 25px;
+	padding-right: 20px;
+	margin-top: 30px;
+	width: 100%;
+	min-height: 300px;
+	max-height: 580px;
+	height: 80vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.input-group--top-spacer-1 {
+	padding-top: 20px;
+}

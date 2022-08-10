@@ -1,0 +1,10 @@
+@function svg-to-data-url($code){
+$escaped: str-replace($code, "\\r", "");
+$escaped: str-replace($escaped, "\\n", "");
+$escaped: str-replace($escaped, "'", "'");
+$escaped: str-replace($escaped, "<", "%3C");
+$escaped: str-replace($escaped, ">", "%3E");
+$escaped: str-replace($escaped, "#", "%23");
+
+@return url("data:image/svg+xml;charset=utf-8,#{$escaped}");
+}

@@ -1,0 +1,10 @@
+@mixin generate-default-button() {
+  .default-button {
+    width: getButtonSizes(button-width);
+    height: getButtonSizes(button-height);
+    border: solid #ff0000 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
